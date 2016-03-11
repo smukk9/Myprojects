@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+html{
+	
+	background-color:#b3ffb3;
+	
+}
+.nav{
+	
+	position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+}
+li{
+	list-style:none;
+}
+a{
+	
+	font-style:oblique;
+	font-size:200%;
+	line-height:1.8;
+	color:red;
+	  font-family:Georgia;
+	  text-decoration:none;	
+}
+a:hover{
+	color:#d24dff;
+}
