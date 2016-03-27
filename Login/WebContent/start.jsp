@@ -5,19 +5,26 @@
 <head>
 <link href="resource/css/start.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Simple WebApp</title>
 </head>
 <body class="news">
-	
-	
-		<div class="nav">
-		<ul>
-			<li class="Login"><a href="Login.jsp" target="frame1">Login</a></li>
-			<li class="Registration"><a  href="Registration.jsp" target="frame1">Registration</a></li>
-			<li class="Peek"><a href="#">Peek</a></li>
-		</ul>
-		</div>
-	
+
+
+	<table>
+		<tr>
+			<td><a href="Login.jsp" target="frame1">Login</a></td>
+		</tr>
+		<tr>
+			<td><a href="Registration.jsp"
+				target="frame1">Registration</a></td>
+		</tr>
+		<tr>
+			<td><a href="peeks.jsp" target="frame1">Peek</a>
+			</td>
+		</tr>
+
+	</table>
+
 </body>
 
 </html>

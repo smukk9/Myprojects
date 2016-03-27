@@ -38,7 +38,7 @@ public class loginservice extends HttpServlet {
 		UserDao userdao = new UserDao();
 		
 		User result = userdao.userExists(u_name, pwd);
-		if(result!=null){
+		if(result!=null){	
 			System.out.println("--------------------");
 			System.out.println(result.getUser_Name());
 			HttpSession session = request.getSession();

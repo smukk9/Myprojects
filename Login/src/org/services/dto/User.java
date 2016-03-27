@@ -10,6 +10,7 @@ import javax.persistence.Table;
 
 //User class has all the details of the user this whole details will be used to save .
 @Entity
+
 @NamedQuery(name="userByIdPwd", query="from User where user_Name=?")
 @Table(name="userData")
 public class User {
@@ -17,11 +18,12 @@ public class User {
 	public User(){
 		//No-arg constructor
 	}
-	
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Id
+	@Column(nullable=false)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int user_Id;
 	
-	@Id	
+	
 	@Column
 	private String user_Name;
 	
@@ -72,6 +74,15 @@ public class User {
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+	
+	public void showUser(){
+		
+		System.out.println(user_Name);
+		System.out.println(E_mail);
+		System.out.println(phone_Number);
+		System.out.println(country);
+	
 	}
 
 	

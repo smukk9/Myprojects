@@ -4,10 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Simple WebApp</title>
-<frameset cols="75%,25%">
-  <frame src=" " name="frame1">
-  <frame src="start.jsp" name="frame2" scrolling="no">
-</frameset>
+<title>Insert title here</title>
 </head>
+<body>
+
+<form action="Gamestart" method="post">
+<input type="submit" name="start" value="Start Game"></input>
+</form>
+
+<form action="cancel" method="post">
+<input type="submit" name="cancel" value="Cancel Game"></input>
+</form>
+
+</body>
 </html>

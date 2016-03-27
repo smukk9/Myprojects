@@ -2,6 +2,8 @@ package org.services.dao;
 
 
 
+
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -62,4 +64,33 @@ System.out.println(values.getUser_Name());
 
 		return null;
 	}
+	
+	public User peekuser(String uname)
+	{
+		Session session =HibernateUtil.getSessionfactory().openSession();
+		Transaction transpeek = session.beginTransaction();
+		Query query = session.getNamedQuery("userByIdPwd");
+		query.setString(0, uname);
+		User u_details = (User) query.uniqueResult();
+		transpeek.commit();
+		session.close();
+		u_details.showUser();
+		return u_details;
+		
+	}
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
